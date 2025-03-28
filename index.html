@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living In Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">StyleLiving</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Designs</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </nav>
+        <div class="hero">
+            <h1>Discover Modern Living</h1>
+            <p>Explore contemporary home designs and inspiration</p>
+            <button id="explore-btn">View Gallery</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-posts">
+            <h2>Featured Home Designs</h2>
+            <div class="posts-grid" id="posts-container">
+                <!-- Posts will be added dynamically -->
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Get Design Inspiration</h2>
+            <form id="newsletter-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="form-success" class="success-message"></div>
+        </section>
+
+        <section class="design-tips">
+            <h2>Interactive Design Tips</h2>
+            <div class="tips-container">
+                <div class="tip-card" id="tip1">
+                    <h3>Maximize Natural Light</h3>
+                    <p class="tip-content">Click to learn how to enhance your space with lighting</p>
+                    <button class="tip-btn">Show More</button>
+                </div>
+                <div class="tip-card" id="tip2">
+                    <h3>Space-Saving Solutions</h3>
+                    <p class="tip-content">Click to discover smart storage ideas</p>
+                    <button class="tip-btn">Show More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 StyleLiving. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
